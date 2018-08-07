@@ -1,0 +1,13 @@
+notes,mobile,from,userType
+正常,12306000004,API,1
+mobile为空,,API,1
+mobile小于11位,1230600004,API,1
+mobile大于11位,123060000004,API,1
+mobile为字符串,接口测试,API,1
+mobile已存在与account,12306000004,API,1
+mobile已存在与user_web,12306000004,API,1
+from为空,12306000005,,1
+from为字符,12306000006,接口测试,1
+userType为1(普通用户),12306000007,api,1
+userType为2(匿名用户),12306000008,api,2
+userType为空(默认为1),12306000009,api,

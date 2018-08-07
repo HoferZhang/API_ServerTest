@@ -1,0 +1,24 @@
+-   config:
+        name: 创建开放平台用户(createOpenUser)
+        request:
+            base_url: 'http://10.10.90.245:8072/bms/service/accountInfoService'
+        parameters:
+        -   notes-extUid-extMobile-extUserName-subChannel: ${P(createOpenUser.csv)}
+
+-   test:
+        name: $notes
+        request:
+            method: POST
+            data:
+                extUid: $extUid
+                extMobile: $extMobile
+                extUserName: $extUserName
+                subChannel: $subChannel
+            url: /createOpenUser
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - content.resCode
+            - 200

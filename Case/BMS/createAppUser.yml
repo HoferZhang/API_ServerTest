@@ -1,0 +1,23 @@
+-   config:
+        name: 创建患者端app用户(createAppUser)
+        request:
+            base_url: 'http://10.10.90.245:8072/bms/service/accountInfoService'
+        parameters:
+        -   notes-mobile-unionid-wxInfoJson: ${P(createAppUser.csv)}
+
+-   test:
+        name: $notes
+        request:
+            method: POST
+            data:
+                mobile: $mobile
+                unionid: $unionid
+                wxInfoJson: $wxInfoJson
+            url: /createAppUser
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - content.resCode
+            - 200

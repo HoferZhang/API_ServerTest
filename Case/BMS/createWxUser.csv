@@ -1,0 +1,10 @@
+notes,wxId,channel,frombiz,wxMsg
+正常,HttpRunner0001,wx_anxinjiankang,chat,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+wxid为空,,anxinjiankang,wx_anxinjiankang,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+wxid为汉字,接口测试,wx_anxinjiankang,chat,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+channel为空,HttpRunner0002,,chat,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+channel为汉字,HttpRunner0003,接口测试,chat,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+frombiz为空,HttpRunner0004,wx_anxinjiankang,,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+frombiz为汉字,HttpRunner0005,wx_anxinjiankang,接口测试,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+wxMsg为空,HttpRunner0006,wx_anxinjiankang,chat,
+wxMsg为格式错误,HttpRunner0007,wx_anxinjiankang,chat,name

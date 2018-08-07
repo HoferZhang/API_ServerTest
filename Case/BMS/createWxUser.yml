@@ -1,0 +1,25 @@
+-   config:
+        name: 创建wx用户(/createWxUser)
+        request:
+            base_url: 'http://10.10.90.245:8072/bms/service/accountInfoService'
+        parameters:
+        -   notes-wxId-channel-frombiz-wxMsg: ${P(createWxUser.csv)}
+
+-   test:
+        name: $notes
+        request:
+            method: POST
+            data:
+                wxId: $wxId
+                channel: $channel
+                frombiz: $frombiz
+                wxMsg: $wxMsg
+            url: /createWxUser
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - content.resCode
+            - 200
+

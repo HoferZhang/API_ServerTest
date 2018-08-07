@@ -1,0 +1,9 @@
+notes,mobile,unionid,wxInfoJson
+正常,12306000031,HttpRunner2,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+mobile为空,,HttpRunner3,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+mobile格式错误,接口测试,HttpRunner4,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+unionid为空,12306000032,,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+mobile和unionid均为空,,,"{""nickname"":""hofer"",""headimgurl"":""5549ba9c5263f2bc238b456e.jpg""}"
+wxInfoJson为空,12306000033,HttpRunner5,
+wxInfoJson格式错误,12306000034,HttpRunner6,nickname
+所有参数均为空,,,

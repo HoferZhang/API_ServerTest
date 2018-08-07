@@ -1,0 +1,15 @@
+notes,extUid,extMobile,extUserName,subChannel
+正常(雅培),extUid0001,12306000020,HttpRunner,anxin_open_yapei
+正常(AI),extUid0002,12306000021,HttpRunner,open_anxin
+extUid为空,,12306000022,HttpRunner,open_anxin
+extUid为汉字,接口测试1,12306000023,HttpRunner,open_anxin
+extMobile为空,extUid0003,,HttpRunner,open_anxin
+extMobile为汉字,extUid0004,接口测试,HttpRunner,open_anxin
+extMobile为int数字,extUid0005,3,HttpRunner,open_anxin
+extMobile已存在于account但不存在与user_partner,extUid0006,15811210028,HttpRunner,open_anxin
+extMobile已存在于use_partner,extUid0007,12306000024,HttpRunner,open_anxin
+extUserName为空,extUid0008,12306000025,接口测试,open_anxin
+extUserName为字母,extUid0009,12306000026,API_Test,open_anxin
+extUserName包含特殊字符,extUid0010,12306000027,%￥#@%……&*,open_anxin
+subChannel为空,extUid0011,12306000028,HttpRunner,
+subChannel为汉字,extUid0012,12306000029,HttpRunner,接口测试

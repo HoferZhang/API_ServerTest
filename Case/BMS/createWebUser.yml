@@ -1,0 +1,24 @@
+-   config:
+        name: 创建H5用户(/createWebUser)
+        request:
+            base_url: 'http://10.10.90.245:8072/bms/service/accountInfoService'
+        parameters:
+        -   notes-mobile-from-userType: ${P(createWebUser.csv)}
+
+-   test:
+        name: $notes
+        request:
+            method: POST
+            data:
+                mobile: $mobile
+                from: $from
+                userType: $userType
+            url: /createWebUser
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - content.resCode
+            - 200
+             
